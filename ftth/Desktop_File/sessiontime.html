@@ -1,0 +1,50 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html ng-app="products.controller">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Conform || OTP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+      
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+
+var app=angular.module("products.controller",[]);
+	app.controller("products_controller",function($scope,$timeout){
+		
+		$timeout(function(){
+			$scope.text="this is time out function";
+		},3000);
+	})
+</script>
+       <!--<script type="text/javascript">
+		var app=angular.module("products.controller",[]);
+	
+		app.controller("products_controller",
+			['$scope','$window','$http',
+				function($scope,$window,$http){
+				
+				
+				    $scope.verifyOTP = function () {
+						alert("conformOtp ::"+conformOtp);
+				        $http({
+				        	url:".././ChangePassword",
+				          method: "GET",
+				          params:{
+								"conformOtp":conformOtp
+							}
+				         }).then(function(response) {
+				        	 alert("OTP Verification successfull");
+				        	 
+				         },function (error){
+				 				console.log(error);
+				 		});
+				     };
+				}]);
+</script> -->
+    </head>
+    <body ng-app="products.controller">
+       <b> {{"text ssss ::"+text}}</b>
+    </body>
+</html>

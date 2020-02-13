@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FTTH</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" href="images/favicon.png" type="images/favicon.png" sizes="16x16">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+</head>
+
+<body style="background: #fff !important;">
+<header style="background: #171c66 !important;">
+	<div class="container-fluid">
+	<div class="row">
+    <div><h3 class="title" style="color:#ffae00;"><center>FIBER TO THE HOME</h3></center></div><br>
+		<div class="col-md-6 logo">
+			<!-- <img src="images/BSNL_BSNL.png" class="img-responsive"> -->
+
+		</div>
+	</div>
+</div>
+</header>
+<section>
+	<div class="container-fluid">
+  		<div class="login-box" style="width: 50%;">
+        <div class="rowcust">
+        <div class="col-sm-6" >
+         <center><input type="radio" disabled><label> Prepaid</label></center> 
+        </div>
+        <div class="col-sm-6" >
+          <center> <input type="radio" checked="checked"><label> Post Paid</label></center> 
+        </div>
+        </div>
+        <div class="row">
+          <center>
+          <div class="col-lg-12 ennum" >
+                <input type="text" class="form-control input1" id=""  placeholder="040" disabled>
+                <input type="text" class="form-control input2" id=""  placeholder="Mobile Number">
+          </div>
+          </center>
+          </div>
+          <div class="row">
+            <a class="change">Change Plan</a>
+            <a hrf="#"class="change" style="    float: right;">Fetch Bill</a>
+          </div>
+
+
+          <div class="rowcust  rowcust1 clearfix">
+            <div class="col-sm-6 dlist" >
+              <p class="cust">Customer Name:</p>
+            </div>
+            <div class="col-sm-6 dlist" >
+              <p class="cust">Kishore Kottu</p>
+            </div>
+
+
+            <div class="col-sm-6 dlist" >
+              <p class="cust">Account Number:</p>
+            </div>
+            <div class="col-sm-6 dlist" >
+              <p class="cust">87564328765</p>
+            </div>
+
+
+            <div class="col-sm-6 dlist" >
+              <p class="cust">Due Date:</p>
+            </div>
+            <div class="col-sm-6 dlist" >
+              <p class="cust">22-07-1991</p>
+            </div>
+
+
+            <div class="col-sm-6 dlist" >
+              <p class="cust">Invoice Date:</p>
+            </div>
+            <div class="col-sm-6 dlist" >
+              <p class="cust">22-07-1991</p>
+            </div>
+
+
+            <div class="col-sm-6" >
+              <p class="cust">Total Due:</p>
+            </div>
+            <div class="col-sm-6" >
+              <p class="cust">1000</p>
+            </div>
+
+            <div class="col-lg-12">
+                <input type="text" class="form-control" id=""  placeholder="Bill Amount"><br>
+
+            </div>
+            
+
+            <div class="col-lg-12">
+                <input type="text" class="form-control" id=""  placeholder="Mobile Number"><br>
+            </div>
+        
+
+            <div class="col-lg-12">
+                <input type="text" class="form-control" id=""  placeholder="Email (Optional)"><br>
+            </div>
+            <br>
+            <div class="row">
+            <center><button type="button" class="btn btn-primary">Proceed to Pay</button></center>
+          </div>
+          </div>
+	     </div>
+</section>
+<footer>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+FROM java:8
+LABEL maintainer="suresh.kumar8409@gmail.com"
+
+EXPOSE 8080
+ADD /target/DockerExample-0.0.1-SNAPSHOT.jar DockerExample-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java", "-jar", "DockerExample-0.0.1-SNAPSHOT.jar"]
+
+-------------------------------------
+command for docker :
+-------------------
+Example$ docker build -f Dockerfile -t dockersuresh .
+
+Example$ docker images
+
+Example$ docker run -p 8080:8080 dockersuresh
+
+pass
+--------
+pyro@wiFi!@#
+
+
+https://www.codementor.io/vcg_cruz/microservices-and-cloud-configuration-using-spring-boot-z7sbpxygp
+
