@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home || Page</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>  
+
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+		 
+
+<style type="text/css">
+	.bs-example{
+    	margin: 10px;
+    }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <a class="navbar-brand" href="#">CTOPUP </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+    <ul class="navbar-nav mr-auto">
+    
+      <!-- <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li> -->
+      
+      <li class="nav-item active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Franchise Management<span class="sr-only">(current)</span></a>
+      	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+          <a class="dropdown-item" href="#">Add</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Add</a>
+          <a class="dropdown-item" href="#">Sync Dealer Data</a>
+          <a class="dropdown-item" href="#">Search</a>
+          <a class="dropdown-item" href="#">Franchise Creation Report</a>
+          <a class="dropdown-item" href="#">Bulk Activation/DeActivation</a>
+          <a class="dropdown-item" href="#">Bulk Dealer Upload</a>
+          <a class="dropdown-item" href="#">Dealer Hierarchy Change</a>
+        </div>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ware House</a>
+     	 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+          <a class="dropdown-item" href="StockAllocation_url">Stock Allocation</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Stock Allocation</a>
+          <a class="dropdown-item" href="#">Recharge TopUp cancel</a>
+          <a class="dropdown-item" href="#">Recharge TopUp cancel Update</a>
+          <a class="dropdown-item" href="#">Bonus Discount Approval</a>
+          <a class="dropdown-item" href="#">SIM Activations Approval</a>
+          <a class="dropdown-item" href="#">Franchise Add Balance</a>
+          <a class="dropdown-item" href="#">San Soft Approval </a>
+          <a class="dropdown-item" href="#">FRC Upload </a>
+          <a class="dropdown-item" href="#">FRC Approval </a>
+          <a class="dropdown-item" href="#">San Soft Allocation </a>
+          <a class="dropdown-item" href="#">Retailer Bonanza Stock Approve </a>
+          <a class="dropdown-item" href="#">Deapprove </a>
+          <a class="dropdown-item" href="#">Recharge TopUp cancel Update Validity</a>
+          <a class="dropdown-item" href="#">Vanity Sales Reversal</a>
+          <a class="dropdown-item" href="#">Fee Amount Approval</a>
+          <a class="dropdown-item" href="#">Fee Amount Allocation</a>
+          <a class="dropdown-item" href="#">Stock Allocation Approval</a>
+          <a class="dropdown-item" href="#">Stock Allocation Receipt</a>
+          <a class="dropdown-item" href="#">Cancel Approved Stock</a>
+          <a class="dropdown-item" href="#">Cancel Stock Movement</a>
+        </div>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reference Data </a>
+      	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+          <a class="dropdown-item" href="#">SIM Configurations</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">SIM Configurations</a>
+          <a class="dropdown-item" href="#">Block Unblock IN</a>
+          <a class="dropdown-item" href="#">Upload Incdr File</a>
+          <a class="dropdown-item" href="#">File Uploader</a>
+          <a class="dropdown-item" href="#">Recharge Voucher</a>
+          <a class="dropdown-item" href="#">Top Up</a>
+          <a class="dropdown-item" href="#">Message Master</a>
+          <a class="dropdown-item" href="#">Flexi TopUp</a>
+          <a class="dropdown-item" href="#">Additional Discount</a>
+          <a class="dropdown-item" href="#">Starter Pack Denomination</a>
+          <a class="dropdown-item" href="#">Starter Pack Commission</a>
+          <a class="dropdown-item" href="#">SIM Sales</a>
+           <a class="dropdown-item" href="#">STV Commission</a>
+        </div>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administration</a>
+      	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+          <a class="dropdown-item" href="#">Default System Settings</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Default System Settings</a>
+          <a class="dropdown-item" href="#">Log Files Details</a>
+          <a class="dropdown-item" href="#">User Manager</a>
+          <a class="dropdown-item" href="#">Send SMS</a>
+          <a class="dropdown-item" href="#">Administrative SMS Flash</a>
+          <a class="dropdown-item" href="#">Profile Management</a>
+          <a class="dropdown-item" href="#">Zone Management</a>
+          <a class="dropdown-item" href="#">Add Series</a>
+          <a class="dropdown-item" href="#">Tax Management</a>
+          <a class="dropdown-item" href="#">Plan Updates</a>
+        </div>
+      </li>
+      
+      <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Customer Management</a>
+      	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+          <a class="dropdown-item" href="#">PPS Queue Monitor</a>
+          <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="#">PPS Queue Monitor</a>
+          <a class="dropdown-item" href="#">SMS History</a>
+          <a class="dropdown-item" href="#">Subscriber Transaction Details</a>
+          <a class="dropdown-item" href="#">Franchise Transaction Details</a>
+        </div>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reports </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+         					 <a class="dropdown-item" href="#">Action</a>
+         
+           					<a class="dropdown-item" href="channel_url">ChannelWiseReport</a>
+                            <a class="dropdown-item" href="kycreport_url">EKYCReport</a>
+                            <a class="dropdown-item" href="CanceledMovedStkReport">CanceledMovedStkReport</a>
+                            <a class="dropdown-item" href="StockCancellationReport_url">StockCancellationReport</a>
+                            <a class="dropdown-item" href="circleINDenomReport_url">INwise Circlewise </a>
+                            <a class="dropdown-item" href="vanityNumberSales_url">VanityNumberSalesReport</a>
+                            <a class="dropdown-item" href="agentRelocationReport_url">AgentRelocationReport</a>
+                            <a class="dropdown-item" href="cTopUpPaymentsReceivedReport_url">CTopUpPaymentsReceivedReport</a>
+                           
+                            <a class="dropdown-item" href="cancelledTransaction_url">CancelledTransactionReport</a>
+                            <a class="dropdown-item" href="sIMActivationsReport_url">SIMActivationsReport</a>
+                            <a class="dropdown-item" href="retailerBonanzaReport_url">RetailerBonanzaReport</a>
+                            <a class="dropdown-item" href="bulkRechargeReport_url">BulkRechargeReport</a>
+                            <a class="dropdown-item" href="pPSTransactionSummaryReport_url">PPSTransactionSummaryReport</a>
+                            <a class="dropdown-item" href="channelTopUpRevenueSummary_url">ChannelTopUpRevenueSummaryReport</a>
+                            <a class="dropdown-item" href="vasRetailerReport_url">VasRetailerReport</a>
+                            <a class="dropdown-item" href="frcReport_url">FRCReport</a>
+                            <a class="dropdown-item" href="unifiedSimSalesReport_url">UnifiedSimSalesReport</a>
+                            <a class="dropdown-item" href="mNPCommissionReports_url">MNPCommissionReports</a>
+                             <a class="dropdown-item" href="ReverseRchTop3_url">ReverseRechargeTopupReport</a>
+                             <a class="dropdown-item" href="SalesReconciliation_url">Sales Reconciliation</a>
+          
+         
+         					 <a class="dropdown-item" href="#">Another action</a>
+         			 <div class="dropdown-divider"></div>
+          					<a class="dropdown-item" href="#">Something else here</a>
+        			 </div>
+     			 </li>
+      
+    			  <li class="nav-item dropdown">
+      				 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Change Password</a>
+     			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+         			 <a class="dropdown-item" href="#">Change Password</a>
+          		<div class="dropdown-divider"></div>
+          			<a class="dropdown-item" href="#">Change Password</a>
+       			 </div>
+     		 </li>
+    
+    
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Logout</a>
+      	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+          <a class="dropdown-item" href="#">Logout</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </li>
+    </ul>
+    
+   <!--  <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="bs-example">
+    <nav id="myNavbar" class="navbar navbar-default" role="navigation">
+       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                  
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Report <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="channel_url">ChannelWiseReport</a></li>
+                            <li><a href="kycreport_url">EKYCReport</a></li>
+                            <li><a href="CanceledMovedStkReport">CanceledMovedStkReport</a></li>
+                            <li><a href="StockCancellationReport_url">StockCancellationReport</a></li>
+                            <li><a href="circleINDenomReport_url">CircleINDenomReport</a></li>
+                            <li><a href="vanityNumberSales_url">VanityNumberSalesReport</a></li>
+                            <li><a href="agentRelocationReport_url">AgentRelocationReport</a></li>
+                            <li><a href="cTopUpPaymentsReceivedReport_url">CTopUpPaymentsReceivedReport</a></li>
+                           
+                            <li><a href="cancelledTransaction_url">CancelledTransactionReport</a></li>
+                            <li><a href="sIMActivationsReport_url">SIMActivationsReport</a></li>
+                            <li><a href="retailerBonanzaReport_url">RetailerBonanzaReport</a></li>
+                             <li><a href="bulkRechargeReport_url">BulkRechargeReport</a></li>
+                             <li><a href="pPSTransactionSummaryReport_url">PPSTransactionSummaryReport</a></li>
+                             <li><a href="channelTopUpRevenueSummary_url">ChannelTopUpRevenueSummaryReport</a></li>
+                             <li><a href="vasRetailerReport_url">VasRetailerReport</a></li>
+                             <li><a href="frcReport_url">FRCReport</a></li>
+                             <li><a href="unifiedSimSalesReport_url">UnifiedSimSalesReport</a></li>
+                              <li><a href="mNPCommissionReports_url">MNPCommissionReports</a></li>
+                             
+                            <li><a href="#">UPComming......</a></li>
+                            
+                            <li class="divider"></li>
+                            <li><a href="#">.....</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Messages2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Inbox</a></li>
+                            <li><a href="#">Drafts</a></li>
+                            <li><a href="#">Sent Items</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Trash</a></li>
+                        </ul>
+                    </li>
+                </ul>
+               
+            </div>
+      </nav>  
+</div>  -->
+</body>
+</html>
+
+
+
