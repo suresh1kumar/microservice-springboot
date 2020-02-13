@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+   <meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link th:href="@{cdns/bootstrap.min.css}" rel="stylesheet" />
+<link th:href="@{cdns/font-awesome.min.css}" rel="stylesheet" />
+<link th:href="@{cdns/ionicons.min.css}" rel="stylesheet" />
+<link th:href="@{cdns/AdminLTE.min.css}" rel="stylesheet" />
+<link th:href="@{cdns/skin-blue.min.css}" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+
+<div th:include="fragments/header::head"></div>
+<div th:include="fragments/sidenave::sidenave"></div>
+
+
+ <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1> Page Header
+        <small>Optional description</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li>
+        	<a href="#">
+        		<i class="fa fa-dashboard"></i> Level
+        	</a>
+        </li>
+        <li class="active">Here</li>
+      </ol>
+    </section>
+    <section class="content container-fluid">
+
+      <!--------------------------
+        | Your Page Content Here |
+        -------------------------->
+        
+        <!------------------------------
+         | Your Page Content Here      |        
+         ------------------------------->
+		<h1>Link Page ................................link </h1>
+    
+    </section>
+  </div>
+ 
+  <div th:include="fragments/footer::foot"></div>
+</div>
+
+<script src="/cdns/jquery.min.js"></script>
+<script src="/cdns/bootstrap.min.js"></script>
+<script src="/cdns/adminlte.min.js"></script>
+
+
+
+</body>
+</html>

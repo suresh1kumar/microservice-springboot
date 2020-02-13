@@ -1,0 +1,62 @@
+Add Enquiry Form ::
+--------------------------
+Hibernate: select insti.institute_id as id, insti.name as name from institute insti;
+Hibernate: select enquir.enquiry_source_id as id, enquir.name as name from enquirysource enquir;
+
+Hibernate: insert into address (address_id, city, country, detail, zip) values (null, ?, ?, ?, ?)
+Hibernate: insert into contact (contact_id, email, local_address, name, permanent_address, phone) values (null, ?, ?, ?, ?, ?)
+Hibernate: insert into enquiry (enquiry_id, committed_fees, contact_id, doe, enquiry_source_id, institute_id, last_update, next_call_date, remark) values (null, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into enquirycourse (enquiry_course_id, course_id, enquiry_id) values (null, ?, ?)
+
+----------------------------------------------------------
+
+Enquiry List ::
+---------------------
+
+Hibernate: select inst.institute_id as id, inst.name as name from institute inst;
+Hibernate: select enqui.enquiry_source_id as id, enqui.name as name from enquirysource enqui;
+Hibernate: select enqui.enquiry_id as id, enqui.doe as doe, enqui.committed_fees as fees, cont.name as name, cont.phone as phone, (select count(follo.followup_id) from followup follo where enqui.enquiry_id=follo.enquiry_id) as follower, (select group_concat(cour.name) from course cour cross join enquirycourse enqui where enqui.enquiry_id=enqui.enquiry_id and enqui.course_id=cour.course_id) as courseName  from enquiry enqui cross join contact cont where enqui.contact_id=cont.contact_id and enqui.institute_id=1
+
+------------------------------------------
+
+Add Institute Form ::
+------------------------
+Hibernate: insert into address (address_id, city, country, detail, zip) values (null, ?, ?, ?, ?)
+addressRepository.save(inst.getContact().getPermanentAddress()) ::com.springboot.school.app.model.Address[ addressId=1 ]
+Hibernate: insert into contact (contact_id, email, local_address, name, permanent_address, phone) values (null, ?, ?, ?, ?, ?)
+contactRepository.save(inst.getContact()) ::com.springboot.school.app.model.Contact[ contactId=1 ]
+Hibernate: insert into institute (institute_id, contact_id, doe, name) values (null, ?, ?, ?)
+instituteRepository.save(inst) ::com.springboot.school.app.model.Institute[ instituteId=1 ]
+Hibernate: select inst.institute_id as id, inst.name as name, cont.phone as phone, cont.email as email, addr.city as city from institute inst cross join contact cont cross join address addr where inst.contact_id=cont.contact_id and cont.permanent_address=addr.address_id
+
+----------------------------------------------------------
+
+List Institute ::
+---------------------
+Hibernate: select inst.institute_id as id, inst.name as name, cont.phone as phone, cont.email as email, addre.city as city from institute inst cross join contact cont cross join address addre where inst.contact_id=cont.contact_id and cont.permanent_address=addre.address_id
+
+
+-----------------------------------------------------------
+
+Enquiry Source ::
+-----------------
+Hibernate: select en.enquiry_source_id as id, en.name as name from enquirysource en
+Hibernate: insert into enquirysource (enquiry_source_id, name) values (null, ?)
+Hibernate: select en.enquiry_source_id as id, en.name as name from enquirysource en;
+
+
+
+-------------------------------------------------------
+
+Courses ::
+----------------
+Hibernate: insert into course (course_id, fees, institute_id, name) values (null, ?, ?, ?)
+Hibernate: select inst.institute_id as id, inst.name as name from institute inst;
+Hibernate: select cour.course_id as id, cour.name as name, cour.fees as fees, inst.name as name from course cour cross join institute inst where cour.institute_id=inst.institute_id
+
+Hibernate: select inst.institute_id as id, inst.name as name from institute inst;
+Hibernate: select cour.course_id as id, cour.name as name, cour.fees as fees, inst.name as name from course cour cross join institute inst where cour.institute_id=inst.institute_id
+
+
+
+

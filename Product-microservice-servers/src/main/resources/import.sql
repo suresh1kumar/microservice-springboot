@@ -1,0 +1,1 @@
+insert into ticket (ticket_id,passanger_name,booking_date, source_station, dest_station, email) values (1,'Sean', '2017-07-14', 'patnanew', 'DelhiNew', 'radha@gmail.com')

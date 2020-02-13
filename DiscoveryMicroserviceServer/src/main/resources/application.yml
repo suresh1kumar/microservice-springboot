@@ -1,0 +1,15 @@
+# Configure this Discovery Server
+eureka:
+  instance:
+    hostname: localhost
+  client: #Not a client
+    registerWithEureka: false
+    fetchRegistry: false
+
+# HTTP (Tomcat) port
+server:
+<<<<<<< HEAD
+  port: 1111
+=======
+  port: 1112
+>>>>>>> First commit
